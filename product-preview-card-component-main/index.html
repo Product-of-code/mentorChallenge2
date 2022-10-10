@@ -15,18 +15,73 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      margin:0px;
+      padding:0px;
+    }
     body{
       font-family: 'Fraunces', serif;
       font-family: 'Montserrat', sans-serif;
+      background:hsl(30, 38%, 92%);
+    }
+    p{
+      font-size:18px;
+      color:hsl(228, 12%, 48%);
+      line-height: 2.5em;
     }
     .container{
       display:flex;
-    }
-    .left{
+      justify-content:center;
+      margin-top:250px;
+      }
 
+    .left, img{
+      height:698px;
+      width:500px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius:10px;
     }
+
     .right{
-
+      display:flex;
+      flex-direction:column;
+      justify-content:space-around;
+      padding-right:85px;
+      padding-left:50px;
+      background:hsl(0, 0%, 100%);
+      height:700px;
+      width:400px;
+      border-top-right-radius:10px;
+      border-bottom-right-radius:10px;
+    }
+    h2{
+      font-size: 70px;
+      font-family: 'Fraunces', serif;
+    }
+    h4{
+      letter-spacing:7px;
+      font-size:20px;
+      font-family: 'Montserrat', sans-serif;
+      color:hsl(228, 12%, 48%);
+    }
+    .button, button{
+      background:hsl(158, 36%, 37%);
+      border:none;
+      padding-top:13px;
+      padding-bottom:13px;
+      border-radius: 15px;
+      font-size: 18px;
+      color:white;
+      font-weight:bold;
+      text-align:center;
+      padding-left:10px;
+    }
+    .price{
+      display: flex;
+    }
+    .greenFont{
+      font-size:32px;
+      color:hsl(158, 36%, 37%);
     }
   </style>
 </head>
@@ -36,19 +91,26 @@
       <img src="./images/image-product-desktop.jpg" alt="text">
    </div>
   <div class="right">
-    <h4>Preview</h4>
+    <h4>PERFUME</h4>
 
     <h2>Gabrielle Essence Eau De Parfum</h2>
     
     <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
     Perfumer-Creator for the House of CHANEL.</p>
 
-    <p>
+    <div class="price">
+    <p class="greenFont">
     $149.99
+    </p>
+    <p>
     $169.99
     </p>
+    </div>
 
+    <div class="button">
+    <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>
     <button>Add to Cart</button>
+    </div>
   </div>
   </div>
 </body>
